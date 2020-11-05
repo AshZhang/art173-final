@@ -1,6 +1,5 @@
-# Art 173 Project 2: Vegetable Soup!
+# Art 173 Final Project
 
-Vegetable Soup! is a game about preparing a delicious veggie soup. Made with Phaser 3 and Typescript.
-You can play it (a work in progress) here: https://hidden-beyond-00157.herokuapp.com/
+Art 173 final project. Collaboration with Giancarlo DiLuce https://github.com/gdiluce.
 
 Rollup configuration from https://github.com/photonstorm/phaser3-typescript-project-template
