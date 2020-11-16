@@ -9,7 +9,10 @@ export class GameState {
     }
 
     gotoScene(scene) {
+        // fade out objects first
         this.currentScene = scene;
+        // play room transition
         this.bgImage = this.currentScene.getBgImage();
+        // fade in new objects
     }
 }

@@ -6,8 +6,8 @@ export class NavButton extends Clickable{
     private scene: RoomScene;
     private gameState: GameState;
 
-    constructor(bgImage: string, scene: RoomScene, gameState: GameState){
-        super(bgImage);
+    constructor(sprite: any, scene: RoomScene, gameState: GameState){
+        super(sprite);
         this.scene = scene;
         this.gameState = gameState;
     }
