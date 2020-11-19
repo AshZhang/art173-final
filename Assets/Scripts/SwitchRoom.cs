@@ -8,7 +8,7 @@ public class SwitchRoom : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		
+		anim = RoomControl.roomAnimator;
 	}
 	
 	// Update is called once per frame

@@ -104,9 +104,10 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: FinishRoomTransition
+    functionName: StartRoomTransition
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 635248635490544621, guid: fea427e52fcb6410588071c6a3cb33e2,
+      type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
