@@ -22,10 +22,12 @@ public class RoomControl : MonoBehaviour
 
     void StartRoomTransition(){
         Destroy(this.navButtons);
-        anim.SetBool("sample", false);
+        anim.SetBool("transitioning", false);
     }
 
     void FinishRoomTransition(GameObject navButtons){
-        this.navButtons = Instantiate(navButtons, new Vector3(0, 0, -1), Quaternion.identity);
+        if(navButtons != null){
+            this.navButtons = Instantiate(navButtons, new Vector3(0, 0, -1), Quaternion.identity);
+        }
     }
 }

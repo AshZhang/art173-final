@@ -50,6 +50,11 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8772587481553471113, guid: 1674e90d8d6af43069677dad36f307cc,
+        type: 3}
+      propertyPath: nextRoom
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8772587481553471114, guid: 1674e90d8d6af43069677dad36f307cc,
         type: 3}
       propertyPath: m_Offset.x
