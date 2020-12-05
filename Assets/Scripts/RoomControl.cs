@@ -11,7 +11,6 @@ public class RoomControl : MonoBehaviour
     void Start()
     {
         roomAnimator = anim;
-        Debug.Log(roomAnimator);
     }
 
     // Update is called once per frame
