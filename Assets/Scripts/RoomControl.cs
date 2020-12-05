@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomControl : MonoBehaviour
 {
-    public GameObject navButtons;
+    public GameObject itemBin;
     public Animator anim;
     public static Animator roomAnimator;
     // Start is called before the first frame update
@@ -21,13 +21,13 @@ public class RoomControl : MonoBehaviour
     }
 
     void StartRoomTransition(){
-        Destroy(this.navButtons);
+        Destroy(this.itemBin);
         anim.SetBool("transitioning", false);
     }
 
-    void FinishRoomTransition(GameObject navButtons){
-        if(navButtons != null){
-            this.navButtons = Instantiate(navButtons, new Vector3(0, 0, -1), Quaternion.identity);
+    void FinishRoomTransition(GameObject itemBin){
+        if(itemBin != null){
+            this.itemBin = Instantiate(itemBin, new Vector3(0, 0, -1), Quaternion.identity);
         }
     }
 }
