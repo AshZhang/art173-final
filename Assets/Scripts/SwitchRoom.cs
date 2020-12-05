@@ -20,5 +20,6 @@ public class SwitchRoom : MonoBehaviour
 	void OnMouseDown ()
 	{
 		anim.SetBool("transitioning", true);
+		anim.SetInteger("room", 0);
 	}
 }

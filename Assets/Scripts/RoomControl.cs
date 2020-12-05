@@ -6,6 +6,8 @@ public class RoomControl : MonoBehaviour
 {
     public GameObject itemBin;
     public Animator anim;
+    public AudioSource sound;
+    public AudioClip errorSound;
     public static Animator roomAnimator;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,14 @@ public class RoomControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void goToBsod(){
+        sound.Stop();
+        Destroy(this.itemBin);
+        sound.clip = errorSound;
+        sound.loop = false;
+        sound.Play();
     }
 
     void StartRoomTransition(){

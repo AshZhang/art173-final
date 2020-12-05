@@ -10,27 +10,21 @@ public class SubconsciousControl : MonoBehaviour
     void Start()
     {
         sound.Stop();
-        anim.speed = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (sound.isPlaying)
+        if (!sound.isPlaying)
         {
-            Debug.Log("Sound playin");
-            anim.speed = 0;
-        }
-        else
-        {
-            Debug.Log("Sound stopped");
-            anim.speed = 1;
+            anim.SetFloat("isS10", 1);
         }
     }
 
     void playSound()
     {
         sound.Play();
+        anim.SetFloat("isS10", 0);
     }
 
 }
