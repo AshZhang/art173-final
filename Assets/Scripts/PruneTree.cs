@@ -10,7 +10,7 @@ public class PruneTree : MonoBehaviour
     void Start()
     {
         anim = RoomControl.roomAnimator;
-        transform.Translate(Vector3.down * 0.45f);
+        transform.Translate(Vector3.down * 0.6f);
     }
 
     // Update is called once per frame
